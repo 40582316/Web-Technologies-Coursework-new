@@ -1,0 +1,98 @@
+/* .article-image {
+    height: 150px;
+    width: 238px;
+  } */
+
+.icon h2:before {
+  display: block;
+  width: 66px;
+  height: 66px;
+  content: "";
+  background-size: auto 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#item1 h2:before {
+  background-image: url("https://i.ibb.co/zhpV25x/icons8-food-recipe-book-66.png");
+}
+#item2 h2:before {
+  background-image: url("https://i.ibb.co/CBsfCLM/image.png");
+}
+#item3 h2:before {
+  background-image: url("https://i.ibb.co/NZgsWWW/your-image.png");
+}
+#item4 h2:before {
+  background-image: url("https://i.ibb.co/VwqPXz2/my-image.png");
+}
+#item5 h2:before {
+  background-image: url("https://i.ibb.co/7yzp6j3/recipe-book.jpg");
+}
+
+.carts-item {
+  background-color: rgb(246 242 239);
+}
+
+.carts-item:before {
+  content: "";
+  position: absolute;
+  top: 65px;
+  left: -10px;
+  right: -10px;
+  bottom: 10px;
+  padding: 30px;
+  margin: 10px 5%;
+  /* background-image: url("https://i.ibb.co/DCDGbTW/Search.webp"); */
+  background-repeat: no-repeat;
+  margin-left: 50%;
+  /* transition: background-size 0.5s ease-in-out; */
+  -webkit-filter: grayscale(0) blur(0);
+  filter: grayscale(0) blur(0);
+  transition: 0.4s ease-in-out;
+  background-size: 50%;
+  background-size: cover;
+  border-radius: 15px;
+}
+.carts-item.item1:before {
+  background-image: url("https://i.ibb.co/DCDGbTW/Search.webp");
+}
+.carts-item.item2:before {
+  background-image: url("https://i.ibb.co/vQrB2hR/Meal-Planning.jpg");
+}
+.carts-item.item3:before {
+  background-image: url("https://i.ibb.co/RzxDDRW/Shopping-List.webp");
+}
+.carts-item.item4:before {
+  background-image: url("https://i.ibb.co/xMrX1nG/Recipe-Suggestions.jpg");
+}
+.carts-item.item5:before {
+  background-image: url("https://i.ibb.co/n1HqgH2/Recipe-Ratings-and-Reviews.webp");
+}
+.carts-item:hover:before {
+  /* background-size: 150%; */
+  top: 50px;
+  left: -20px;
+  right: -20px;
+  bottom: 0px;
+  padding: 0px;
+  transition: background-size 0.4s ease-in-out;
+  -webkit-filter: grayscale(100%) blur(2px);
+  filter: grayscale(100%) blur(2px);
+  transition: 0.4s ease-in-out;
+}
+/* .ar-image {
+    position: relative;
+  } */
+/* .carts-item.item1 > p {
+    display: none;
+  } */
+/* .carts-item.item1:hover {
+    position: absolute;
+    top: 40%; */
+/* background-image: url('https://i.ibb.co/DCDGbTW/Search.webp');
+    display: block;
+    color: #ffffff;
+    z-index: 9999999;
+    transition: .4s ease-in-out;
+  } */

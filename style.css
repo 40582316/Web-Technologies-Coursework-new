@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 1rem;
+  font-family: "Montserrat Subrayada", sans-serif;
+  /* font-family: "Josefin Sans", sans-serif; */
+  background-color: rgb(97, 79, 68);
+}
+body {
+}
+a {
+  text-decoration: none;
+}
+.container {
+  /* min-height: 100vh; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+li {
+  color: white;
+}
+h4 {
+  font-weight: bolder;
+  font-size: 1.3rem;
+  color: white;
+}
+/*foodie Section */
+#foodie {
+  background-image: url("https://c1.wallpaperflare.com/preview/743/182/516/ingredients-cooking-preparation-spices.jpg");
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+  /* display: none; */
+}
+#top_intro {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+#foodie::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+  z-index: -1;
+}
+#foodie .foodie {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px 3rem;
+  justify-content: flex-start;
+}
+#foodie h1 {
+  display: block;
+  /* width: fit-content; */
+  font-size: 4rem;
+  /* position: relative; */
+  /* color: transparent; */
+  animation: text_reveal 0.5s ease forwards;
+  animation-delay: 1.5s;
+}
+#foodie h1:nth-child(1) {
+  animation-delay: 1s;
+}
+#foodie h1:nth-child(2) {
+  animation-delay: 2s;
+}
+#foodie h1:nth-child(3) {
+  animation: text_reveal_name 0.5s ease forwards;
+  animation-delay: 3s;
+}
+#foodie h1 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: red;
+  animation: text_reveal_box 1s ease;
+  animation-delay: 0.5s;
+}
+#foodie h1:nth-child(1) span {
+  animation-delay: 0.5s;
+}
+#foodie h1:nth-child(2) span {
+  animation-delay: 1.5s;
+}
+#foodie h1:nth-child(3) span {
+  animation-delay: 2.5s;
+}
+#foodie .cta {
+  display: block;
+  padding: 10px 30px;
+  color: crimson;
+  background-color: transparent;
+  border: 2px solid crimson;
+  font-size: 2rem;
+  /* text-transform: uppercase; */
+  text-decoration: none;
+  /* letter-spacing: 0.1rem; */
+  margin-top: 30px;
+  transition: 0.3s ease background-color, color;
+  text-decoration: none;
+  overflow-wrap: break-word;
+  /* font-family: ui-rounded; */
+}
+#foodie .cta:hover {
+  color: whitesmoke;
+  background-color: red;
+}
+
+/*End foodie Section */
+
+/* carts Section */
+
+#carts {
+  background: none;
+  padding: 3rem;
+  /* display: none; */
+}
+#carts .carts {
+  flex-direction: column;
+  text-align: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+#carts .section-title {
+  font-size: 4rem;
+  font-weight: 300;
+  color: rgb(246 242 239);
+  margin-bottom: 10px;
+  /* text-transform: uppercase; */
+  /* letter-spacing: 0.2rem; */
+  text-align: center;
+  /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); */
+}
+
+#carts .section-title span {
+  color: crimson;
+}
+
+#carts .service-top p {
+  font-size: 1.5rem;
+  margin-top: 5px;
+  line-height: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  color: rgb(246 242 239);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+#carts .service-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* margin-top: 50px; */
+}
+#carts .carts-item {
+  flex-basis: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+  /* background-image: url('https://i.ibb.co/DCDGbTW/Search.webp'); */
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 10px 5%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+
+#carts .carts-item h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  /* letter-spacing: 0.3em; */
+  color: #ffffff;
+  /* text-transform: uppercase; */
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+#carts .carts-item p {
+  font-size: 1.6rem;
+  color: #ffffff;
+  font-weight: 300;
+  line-height: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+}
+
+.icon {
+  max-width: 600px;
+  color: #ffffff;
+  margin-right: 52%;
+  /* margin-right: 30px; */
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.7));
+}
+
+.icon h2 span {
+  color: #f75555;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.carts-item a {
+  display: inline-block;
+  font-size: 1.4rem;
+  /* text-transform: uppercase; */
+  color: #ffffff;
+  font-weight: 700;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.carts-item a:hover {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+#carts .carts-item.icon span {
+  color: #f75555;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+#carts .carts-item {
+  flex-basis: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 10px 5%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+#carts .carts-item p {
+  font-size: 1.6rem;
+  color: #3a2121;
+  font-weight: bolder;
+  line-height: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* End carts Section */
+
+/* Keyframes */
+
+@keyframes text_reveal {
+  100% {
+    color: whitesmoke;
+  }
+}
+@keyframes text_reveal_name {
+  100% {
+    color: red;
+    font-weight: 500;
+  }
+}
+
+/* End Keyframes */
+
+/*Media Service Section */
+/* @media (max-width: 320px) {
+  #carts .service-item.item4 {
+    background-size: 40% auto, center;
+  }
+  .search-result {
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  #carts .service-item.item4 {
+    background-size: 40% auto, center;
+  }
+  .search-result {
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 1024px) {
+  .search-result {
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+} */
+
+/* End Media Service Section */
+
+/* 
+.search-result {
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+grid-template-columns: 1fr 1fr 1fr; */

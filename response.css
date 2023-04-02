@@ -1,0 +1,54 @@
+.label {
+  color: white;
+  font-size: 1.3rem;
+  min-height: 5.5rem;
+}
+.label::after {
+  display: block;
+  width: 100%;
+  height: 1px;
+}
+/* .view-btn {
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #404041;
+  color: whitesmoke;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 20px;
+  border-radius: 4px;
+  align-self: flex-start;
+} */
+.health_labels li {
+  list-style: none;
+  color: #a5a4a4;
+  display: inline-block;
+  margin: 0.2rem;
+  border-radius: 7px;
+  border: 1px solid grey;
+  background: #3e3636;
+  line-height: 1.8rem;
+  padding: 0 0.4rem;
+}
+.dietLbls li {
+  list-style: none;
+  color: #a5a4a4;
+  margin: 0.2rem;
+  border-radius: 7px;
+  border: 1px solid grey;
+  background: #3e3636;
+  line-height: 1.8rem;
+  padding: 0 0.4rem;
+}
+.ingr_lines li {
+  list-style: none;
+  color: pink;
+}
+.calories {
+  line-height: 2.5rem;
+  letter-spacing: 0.05rem;
+  color: rgb(246 242 239);
+  text-align: right;
+}

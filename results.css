@@ -1,0 +1,14 @@
+.food_img {
+  margin: auto;
+  width: 50%;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 22px 32px;
+  height: auto;
+  display: block;
+}
+.r_label {
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
